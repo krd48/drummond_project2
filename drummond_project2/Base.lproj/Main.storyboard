@@ -18,19 +18,83 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Hello World" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5kL-bq-QpR">
-                                <rect key="frame" x="154" y="111" width="97" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Favorite Food Application" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SKu-eR-LT8">
+                                <rect key="frame" x="91" y="32" width="193.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="fhY-ko-UhI">
-                                <rect key="frame" x="115" y="332" width="200" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </slider>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" distribution="fillEqually" spacing="70" translatesAutoresizingMaskIntoConstraints="NO" id="PVv-hs-hdA">
+                                <rect key="frame" x="116" y="173" width="148" height="309.5"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Kyle" borderStyle="roundedRect" placeholder="First and last name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="k8s-c2-SGY">
+                                        <rect key="frame" x="0.0" y="0.0" width="148" height="24.5"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Drummond" borderStyle="roundedRect" placeholder="Last Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ogp-nI-Qp4">
+                                        <rect key="frame" x="0.0" y="94.5" width="148" height="25"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Pizza" borderStyle="roundedRect" placeholder="Favorite Food" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PKD-mB-4Zu">
+                                        <rect key="frame" x="0.0" y="189.5" width="148" height="25"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Chipotle" borderStyle="roundedRect" placeholder="Favorite Restaurant" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0Ml-nZ-IwG">
+                                        <rect key="frame" x="0.0" y="284.5" width="148" height="25"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="sBe-TP-4fJ">
+                                <rect key="frame" x="164" y="580" width="49" height="31"/>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Are you hungry?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vca-ht-kSM">
+                                <rect key="frame" x="128" y="534" width="134" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.31482631086106183" green="1" blue="0.27926095041596544" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="PVv-hs-hdA" firstAttribute="bottom" secondItem="SKu-eR-LT8" secondAttribute="bottom" constant="450.5" id="0YI-Bj-fXx"/>
+                            <constraint firstItem="vca-ht-kSM" firstAttribute="centerX" secondItem="SKu-eR-LT8" secondAttribute="centerX" constant="7.25" id="2Oo-J8-fbR"/>
+                            <constraint firstItem="sBe-TP-4fJ" firstAttribute="top" secondItem="SKu-eR-LT8" secondAttribute="top" constant="548" id="3A0-7y-WvG"/>
+                            <constraint firstItem="vca-ht-kSM" firstAttribute="top" secondItem="SKu-eR-LT8" secondAttribute="top" constant="502" id="3DN-of-A9J"/>
+                            <constraint firstItem="vca-ht-kSM" firstAttribute="trailing" secondItem="SKu-eR-LT8" secondAttribute="trailing" constant="-22.5" id="4e5-ma-JZT"/>
+                            <constraint firstItem="sBe-TP-4fJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6jC-wz-BE9"/>
+                            <constraint firstItem="sBe-TP-4fJ" firstAttribute="bottom" secondItem="SKu-eR-LT8" secondAttribute="bottom" constant="558.5" id="7FW-hA-ojh"/>
+                            <constraint firstItem="sBe-TP-4fJ" firstAttribute="baseline" secondItem="SKu-eR-LT8" secondAttribute="baseline" constant="563" id="CGV-py-lv1"/>
+                            <constraint firstItem="PVv-hs-hdA" firstAttribute="leading" secondItem="SKu-eR-LT8" secondAttribute="leading" constant="25" id="HHW-FW-ymA"/>
+                            <constraint firstItem="vca-ht-kSM" firstAttribute="leading" secondItem="SKu-eR-LT8" secondAttribute="leading" constant="37" id="Kdb-8d-tx2"/>
+                            <constraint firstItem="sBe-TP-4fJ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="262" id="MrO-Dm-a4s"/>
+                            <constraint firstItem="vca-ht-kSM" firstAttribute="bottom" secondItem="SKu-eR-LT8" secondAttribute="bottom" constant="502.5" id="Obd-0b-5zc"/>
+                            <constraint firstItem="vca-ht-kSM" firstAttribute="centerY" secondItem="SKu-eR-LT8" secondAttribute="centerY" constant="502.25" id="SQ7-uh-ZjS"/>
+                            <constraint firstItem="vca-ht-kSM" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="211" id="VhS-2x-Xd4"/>
+                            <constraint firstItem="SKu-eR-LT8" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-291.25" id="aEc-TD-1LV"/>
+                            <constraint firstItem="sBe-TP-4fJ" firstAttribute="centerY" secondItem="SKu-eR-LT8" secondAttribute="centerY" constant="553.25" id="aTT-Me-xt9"/>
+                            <constraint firstItem="vca-ht-kSM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="7.5" id="bPS-Bu-wE6"/>
+                            <constraint firstItem="SKu-eR-LT8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bvm-RN-iJF"/>
+                            <constraint firstItem="vca-ht-kSM" firstAttribute="baseline" secondItem="SKu-eR-LT8" secondAttribute="baseline" constant="502.5" id="cWe-qg-GwX"/>
+                            <constraint firstItem="PVv-hs-hdA" firstAttribute="top" secondItem="SKu-eR-LT8" secondAttribute="top" constant="141" id="fTi-ra-Cgv"/>
+                            <constraint firstItem="PVv-hs-hdA" firstAttribute="centerY" secondItem="SKu-eR-LT8" secondAttribute="centerY" constant="295.75" id="gFh-FD-eGI"/>
+                            <constraint firstItem="PVv-hs-hdA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="1.5" id="jgh-Dp-kb3"/>
+                            <constraint firstItem="PVv-hs-hdA" firstAttribute="baseline" secondItem="SKu-eR-LT8" secondAttribute="baseline" constant="455" id="kIe-Z3-IKR"/>
+                            <constraint firstItem="PVv-hs-hdA" firstAttribute="centerX" secondItem="SKu-eR-LT8" secondAttribute="centerX" constant="1.25" id="kNF-p4-YdC"/>
+                            <constraint firstItem="sBe-TP-4fJ" firstAttribute="leading" secondItem="SKu-eR-LT8" secondAttribute="leading" constant="73" id="nsF-Dn-6pk"/>
+                            <constraint firstItem="PVv-hs-hdA" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="4.5" id="qdb-Yw-xYg"/>
+                            <constraint firstItem="PVv-hs-hdA" firstAttribute="trailing" secondItem="SKu-eR-LT8" secondAttribute="trailing" constant="-22.5" id="xT8-Jw-yvH"/>
+                            <constraint firstItem="sBe-TP-4fJ" firstAttribute="trailing" secondItem="SKu-eR-LT8" secondAttribute="trailing" constant="-73.5" id="yxq-Ho-tJp"/>
+                            <constraint firstItem="sBe-TP-4fJ" firstAttribute="centerX" secondItem="SKu-eR-LT8" secondAttribute="centerX" id="zHs-og-YxM"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
