@@ -1,25 +1,51 @@
 //
-//  ViewController.swift
-//  drummond_project2
+// Moving keyboard for item
 //
-//  Created by Drummond,Kyle on 2/21/18.
-//  Copyright © 2018 Drummond,Kyle. All rights reserved.
-//
+// Note: Comments with this label are to explain semantics of iOS
+//       Do not use comments like these in your projects
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class ViewController: UIViewController, UITextFieldDelegate {
+    
+    // email address entry
+    // Note: Must create text field in storyboard, and connect to this IBOutlet
+    @IBOutlet weak var emailText: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        self.emailText.delegate = self
+        
+        // shifts the view up for space for the keyboard
+        NotificationCenter.default.addObserver(forName: .UIKeyboardWillShow, object: nil, queue: nil) {
+            notification in
+            
+            // find the size of the keyboard
+            guard let keyboardSize = (notification.userInfo?[UIKeyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue else {
+                print("ERROR: Unable to get keyboard size")
+                return
+            }
+            
+            // move the whole thing up
+            self.view.frame.origin.y = -keyboardSize.height
+        }
+        
+        // shifts the view up for space for the keyboard
+        NotificationCenter.default.addObserver(forName: .UIKeyboardWillHide, object: nil, queue: nil) {
+            notification in
+            
+            // move back to original position
+            self.view.frame.origin.y = 0
+        }
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    // Make the keyboard disappear once return is pressed
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        
+        textField.resignFirstResponder()
+        
+        // Note: implements default return key behavior
+        return true
     }
-
-
 }
-
