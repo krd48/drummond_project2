@@ -12,8 +12,12 @@ class ViewController: UIViewController, UITextFieldDelegate {
     // Note: Must create text field in storyboard, and connect to this IBOutlet
     @IBOutlet weak var emailText: UITextField!
     
+    @IBOutlet weak var f_name: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.f_name.text = "matt"
         
         self.emailText.delegate = self
         
@@ -38,6 +42,15 @@ class ViewController: UIViewController, UITextFieldDelegate {
             // move back to original position
             self.view.frame.origin.y = 0
         }
+    }
+    
+    func loadDefaults() {
+        // TODO: Load in plist values
+    }
+    
+    @IBAction func updateDefaults() {
+        // TODO: Grab the input field values and update the plist with them
+        print("we just saved the user inputs.")
     }
     
     // Make the keyboard disappear once return is pressed

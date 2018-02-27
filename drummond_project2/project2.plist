@@ -2,15 +2,13 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
     <dict>
-        <key>Full_Name</key>
-        <string>Kyle Drummond</string>
-        <key></key>
-        <string></string>
-        <key></key>
-        <string></string>
-        <key></key>
-        <string></string>
-        <key></key>
-        <string></string>
+        <key>First_name</key>
+        <string>Kyle</string>
+        <key>Last_name</key>
+        <string>Drumz</string>
+        <key>favfood</key>
+        <string>Pizza</string>
+        <key>favrestaurant</key>
+        <string>Chipote</string>
     </dict>
 </plist>

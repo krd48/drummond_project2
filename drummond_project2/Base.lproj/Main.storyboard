@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,90 +15,82 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="drummond_project2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" colorLabel="IBBuiltInLabel-Green">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Favorite Food Application" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SKu-eR-LT8">
-                                <rect key="frame" x="91" y="32" width="193.5" height="20.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Favorite Food Application" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SKu-eR-LT8">
+                                <rect key="frame" x="110.33333333333333" y="38" width="193.66666666666669" height="20.333333333333329"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" distribution="fillEqually" spacing="70" translatesAutoresizingMaskIntoConstraints="NO" id="PVv-hs-hdA">
-                                <rect key="frame" x="116" y="173" width="148" height="309.5"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="PVv-hs-hdA">
+                                <rect key="frame" x="82" y="81" width="250" height="180"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Kyle" borderStyle="roundedRect" placeholder="First and last name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="k8s-c2-SGY">
-                                        <rect key="frame" x="0.0" y="0.0" width="148" height="24.5"/>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First and last name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="k8s-c2-SGY">
+                                        <rect key="frame" x="0.0" y="0.0" width="250" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="250" id="51F-z8-bi8"/>
+                                        </constraints>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Drummond" borderStyle="roundedRect" placeholder="Last Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ogp-nI-Qp4">
-                                        <rect key="frame" x="0.0" y="94.5" width="148" height="25"/>
+                                        <rect key="frame" x="0.0" y="50" width="250" height="30"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Pizza" borderStyle="roundedRect" placeholder="Favorite Food" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PKD-mB-4Zu">
-                                        <rect key="frame" x="0.0" y="189.5" width="148" height="25"/>
+                                        <rect key="frame" x="0.0" y="100" width="250" height="30"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Chipotle" borderStyle="roundedRect" placeholder="Favorite Restaurant" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0Ml-nZ-IwG">
-                                        <rect key="frame" x="0.0" y="284.5" width="148" height="25"/>
+                                        <rect key="frame" x="0.0" y="150" width="250" height="30"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                 </subviews>
                             </stackView>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="sBe-TP-4fJ">
-                                <rect key="frame" x="164" y="580" width="49" height="31"/>
-                            </switch>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Are you hungry?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vca-ht-kSM">
-                                <rect key="frame" x="128" y="534" width="134" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Are you hungry?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vca-ht-kSM">
+                                <rect key="frame" x="144.66666666666666" y="279" width="124.99999999999997" height="20.333333333333314"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="sBe-TP-4fJ">
+                                <rect key="frame" x="182.66666666666666" y="314.66666666666669" width="51" height="31"/>
+                            </switch>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZWJ-IS-PJY">
+                                <rect key="frame" x="184" y="377" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="updateDefaults" destination="BYZ-38-t0r" eventType="touchUpInside" id="oYa-wf-9Hf"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="PVv-hs-hdA" firstAttribute="bottom" secondItem="SKu-eR-LT8" secondAttribute="bottom" constant="450.5" id="0YI-Bj-fXx"/>
-                            <constraint firstItem="vca-ht-kSM" firstAttribute="centerX" secondItem="SKu-eR-LT8" secondAttribute="centerX" constant="7.25" id="2Oo-J8-fbR"/>
-                            <constraint firstItem="sBe-TP-4fJ" firstAttribute="top" secondItem="SKu-eR-LT8" secondAttribute="top" constant="548" id="3A0-7y-WvG"/>
-                            <constraint firstItem="vca-ht-kSM" firstAttribute="top" secondItem="SKu-eR-LT8" secondAttribute="top" constant="502" id="3DN-of-A9J"/>
-                            <constraint firstItem="vca-ht-kSM" firstAttribute="trailing" secondItem="SKu-eR-LT8" secondAttribute="trailing" constant="-22.5" id="4e5-ma-JZT"/>
-                            <constraint firstItem="sBe-TP-4fJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6jC-wz-BE9"/>
-                            <constraint firstItem="sBe-TP-4fJ" firstAttribute="bottom" secondItem="SKu-eR-LT8" secondAttribute="bottom" constant="558.5" id="7FW-hA-ojh"/>
-                            <constraint firstItem="sBe-TP-4fJ" firstAttribute="baseline" secondItem="SKu-eR-LT8" secondAttribute="baseline" constant="563" id="CGV-py-lv1"/>
-                            <constraint firstItem="PVv-hs-hdA" firstAttribute="leading" secondItem="SKu-eR-LT8" secondAttribute="leading" constant="25" id="HHW-FW-ymA"/>
-                            <constraint firstItem="vca-ht-kSM" firstAttribute="leading" secondItem="SKu-eR-LT8" secondAttribute="leading" constant="37" id="Kdb-8d-tx2"/>
-                            <constraint firstItem="sBe-TP-4fJ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="262" id="MrO-Dm-a4s"/>
-                            <constraint firstItem="vca-ht-kSM" firstAttribute="bottom" secondItem="SKu-eR-LT8" secondAttribute="bottom" constant="502.5" id="Obd-0b-5zc"/>
-                            <constraint firstItem="vca-ht-kSM" firstAttribute="centerY" secondItem="SKu-eR-LT8" secondAttribute="centerY" constant="502.25" id="SQ7-uh-ZjS"/>
-                            <constraint firstItem="vca-ht-kSM" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="211" id="VhS-2x-Xd4"/>
-                            <constraint firstItem="SKu-eR-LT8" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-291.25" id="aEc-TD-1LV"/>
-                            <constraint firstItem="sBe-TP-4fJ" firstAttribute="centerY" secondItem="SKu-eR-LT8" secondAttribute="centerY" constant="553.25" id="aTT-Me-xt9"/>
-                            <constraint firstItem="vca-ht-kSM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="7.5" id="bPS-Bu-wE6"/>
-                            <constraint firstItem="SKu-eR-LT8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bvm-RN-iJF"/>
-                            <constraint firstItem="vca-ht-kSM" firstAttribute="baseline" secondItem="SKu-eR-LT8" secondAttribute="baseline" constant="502.5" id="cWe-qg-GwX"/>
-                            <constraint firstItem="PVv-hs-hdA" firstAttribute="top" secondItem="SKu-eR-LT8" secondAttribute="top" constant="141" id="fTi-ra-Cgv"/>
-                            <constraint firstItem="PVv-hs-hdA" firstAttribute="centerY" secondItem="SKu-eR-LT8" secondAttribute="centerY" constant="295.75" id="gFh-FD-eGI"/>
-                            <constraint firstItem="PVv-hs-hdA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="1.5" id="jgh-Dp-kb3"/>
-                            <constraint firstItem="PVv-hs-hdA" firstAttribute="baseline" secondItem="SKu-eR-LT8" secondAttribute="baseline" constant="455" id="kIe-Z3-IKR"/>
-                            <constraint firstItem="PVv-hs-hdA" firstAttribute="centerX" secondItem="SKu-eR-LT8" secondAttribute="centerX" constant="1.25" id="kNF-p4-YdC"/>
-                            <constraint firstItem="sBe-TP-4fJ" firstAttribute="leading" secondItem="SKu-eR-LT8" secondAttribute="leading" constant="73" id="nsF-Dn-6pk"/>
-                            <constraint firstItem="PVv-hs-hdA" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="4.5" id="qdb-Yw-xYg"/>
-                            <constraint firstItem="PVv-hs-hdA" firstAttribute="trailing" secondItem="SKu-eR-LT8" secondAttribute="trailing" constant="-22.5" id="xT8-Jw-yvH"/>
-                            <constraint firstItem="sBe-TP-4fJ" firstAttribute="trailing" secondItem="SKu-eR-LT8" secondAttribute="trailing" constant="-73.5" id="yxq-Ho-tJp"/>
-                            <constraint firstItem="sBe-TP-4fJ" firstAttribute="centerX" secondItem="SKu-eR-LT8" secondAttribute="centerX" id="zHs-og-YxM"/>
+                            <constraint firstItem="vca-ht-kSM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="AnR-Sl-MRw"/>
+                            <constraint firstItem="PVv-hs-hdA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="E1v-F9-X4u"/>
+                            <constraint firstItem="ZWJ-IS-PJY" firstAttribute="top" secondItem="sBe-TP-4fJ" secondAttribute="bottom" constant="31.329999999999998" id="Eq5-K2-LhJ"/>
+                            <constraint firstItem="SKu-eR-LT8" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="18" id="IWD-AX-PlM"/>
+                            <constraint firstItem="vca-ht-kSM" firstAttribute="top" secondItem="PVv-hs-hdA" secondAttribute="bottom" constant="18" id="MQ6-lu-0iw"/>
+                            <constraint firstItem="PVv-hs-hdA" firstAttribute="top" secondItem="SKu-eR-LT8" secondAttribute="bottom" constant="22.5" id="QbO-ah-gsZ"/>
+                            <constraint firstItem="sBe-TP-4fJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="RRf-MH-yub"/>
+                            <constraint firstItem="sBe-TP-4fJ" firstAttribute="top" secondItem="vca-ht-kSM" secondAttribute="bottom" constant="15.5" id="Tad-JT-crr"/>
+                            <constraint firstItem="ZWJ-IS-PJY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cqj-vY-wH5"/>
+                            <constraint firstItem="SKu-eR-LT8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pWl-cT-M3a"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="emailText" destination="PKD-mB-4Zu" id="TV9-Np-JTQ"/>
+                        <outlet property="f_name" destination="k8s-c2-SGY" id="3WF-cI-m8A"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
