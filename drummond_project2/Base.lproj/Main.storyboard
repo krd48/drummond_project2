@@ -91,6 +91,7 @@
                     <connections>
                         <outlet property="emailText" destination="PKD-mB-4Zu" id="TV9-Np-JTQ"/>
                         <outlet property="first" destination="k8s-c2-SGY" id="Ua5-qA-xVT"/>
+                        <outlet property="firstname" destination="k8s-c2-SGY" id="fhM-XK-Anb"/>
                         <outlet property="last" destination="Ogp-nI-Qp4" id="jov-Qh-u4q"/>
                         <outlet property="restaurant" destination="0Ml-nZ-IwG" id="H9T-DI-LUX"/>
                     </connections>
