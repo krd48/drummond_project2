@@ -3,12 +3,12 @@
 <plist version="1.0">
     <dict>
         <key>First_name</key>
-        <string>Kyle</string>
+        <string>This worked!</string>
         <key>Last_name</key>
-        <string>Drumz</string>
+        <string>This worked!</string>
         <key>favfood</key>
-        <string>Pizza</string>
+        <string>This worked!</string>
         <key>favrestaurant</key>
-        <string>Chipote</string>
+        <string>This worked!</string>
     </dict>
 </plist>
