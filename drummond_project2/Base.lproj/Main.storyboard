@@ -71,9 +71,6 @@
                             </button>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="sBe-TP-4fJ">
                                 <rect key="frame" x="161" y="318" width="51" height="31"/>
-                                <connections>
-                                    <action selector="switch:" destination="BYZ-38-t0r" eventType="valueChanged" id="fmx-0R-dMO"/>
-                                </connections>
                             </switch>
                         </subviews>
                         <color key="backgroundColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -95,7 +92,6 @@
                         <outlet property="emailText" destination="PKD-mB-4Zu" id="3bq-l9-mBl"/>
                         <outlet property="first" destination="k8s-c2-SGY" id="Ua5-qA-xVT"/>
                         <outlet property="last" destination="Ogp-nI-Qp4" id="jov-Qh-u4q"/>
-                        <outlet property="output" destination="vca-ht-kSM" id="olQ-V0-Ukf"/>
                         <outlet property="restaurant" destination="0Ml-nZ-IwG" id="H9T-DI-LUX"/>
                     </connections>
                 </viewController>

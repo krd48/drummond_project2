@@ -16,19 +16,7 @@ struct DefaultInfo : Codable{
 
 class ViewController: UIViewController, UITextFieldDelegate {
     
-    @IBOutlet weak var output: UILabel!
-    
-    @IBAction func `switch`(_ sender: UISwitch) {
-        if (sender.isOn == true)
-        {
-            output.text = "I am hungry"
-        }
-        else{
-            output.text = "No I am not hungry"
-        }
-        print(output)
-    }
-    
+
     // mood of the (single) user
     var defaultInfo = DefaultInfo()
     var lastname = DefaultInfo()
@@ -43,12 +31,13 @@ class ViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var last: UITextField!
     @IBOutlet weak var emailText: UITextField!
     @IBOutlet weak var restaurant: UITextField!
+   // @IBOutlet weak var `switch`: UISwitch!
     
     //@IBOutlet weak var f_name: UITextField!
     
  
 // URL for file UserData.plist in user document directory for this app
-    lazy var localFileURL = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0].appendingPathComponent("Default_Info").appendingPathExtension("plist")
+    lazy var localFileURL = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0].appendingPathComponent("proj2").appendingPathExtension("plist")
     
    override func viewDidLoad() {
         super.viewDidLoad()
@@ -58,17 +47,23 @@ class ViewController: UIViewController, UITextFieldDelegate {
         self.restaurant.delegate = self
     
     
-    self.emailText.delegate = self
-
-    
     defer {
     // set the default field
-    self.emailText.text = self.defaultInfo.First_name
+    self.first.text = self.defaultInfo.Last_name
+    self.last.text = self.lastname.Last_name
+    self.emailText.text = self.favfood.Last_name
+    self.restaurant.text = self.favrestaurant.Last_name
+    self.first.text = self.defaultInfo.First_name
+   // print(self.defaultInfo.Last_name)
     }
 
-    guard let defaultInfoURL = Bundle.main.url(forResource: "project2", withExtension:"plist") else {
-    print("Error: Unable to form path")
-    return
+    
+    
+    guard let defaultInfoURL = Bundle.main.url(forResource: "proj2", withExtension:"plist") else {
+        print("Error: is it still here Unable to form path")
+  
+        
+        return
     }
     
     guard let data = try? Data(contentsOf:defaultInfoURL) else {
