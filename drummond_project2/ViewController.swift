@@ -26,6 +26,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         else{
             output.text = "No I am not hungry"
         }
+        print(output)
     }
     
     // mood of the (single) user
