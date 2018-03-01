@@ -9,6 +9,9 @@ import UIKit
 
 struct DefaultInfo : Codable{
     var First_name: String?
+    var Last_name: String?
+    var favfood: String?
+    var favrestaurant: String?
 }
 
 class ViewController: UIViewController, UITextFieldDelegate {
@@ -16,22 +19,23 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     // mood of the (single) user
     var defaultInfo = DefaultInfo()
+    var lastname = DefaultInfo()
+    var favfood = DefaultInfo()
+    var favrestaurant = DefaultInfo()
     
     
     // email address entry
     // Note: Must create text field in storyboard, and connect to this IBOutlet
-    @IBOutlet weak var emailText: UITextField!
+    
     @IBOutlet weak var first: UITextField!
     @IBOutlet weak var last: UITextField!
+    @IBOutlet weak var emailText: UITextField!
     @IBOutlet weak var restaurant: UITextField!
     
     //@IBOutlet weak var f_name: UITextField!
     
-    @IBOutlet weak var firstname: UITextField!
-    @IBOutlet weak var moodText: UITextField!
-
-    
-    // URL for file UserData.plist in user document directory for this app
+ 
+// URL for file UserData.plist in user document directory for this app
     lazy var localFileURL = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0].appendingPathComponent("Default_Info").appendingPathExtension("plist")
     
    override func viewDidLoad() {
@@ -92,10 +96,74 @@ class ViewController: UIViewController, UITextFieldDelegate {
         self.emailText.resignFirstResponder()
         
         DispatchQueue.main.async {
-            if let First_name = self.emailText.text {
-                print("New name: \(First_name)")
+            if let First_name = self.first.text {
+                print("New first name: \(First_name)")
                 
                 self.defaultInfo.First_name = First_name
+                
+                // save the userData to the userDataURL
+                let encoder = PropertyListEncoder()
+                encoder.outputFormat = .xml
+                do {
+                    try encoder.encode(self.defaultInfo).write(to: self.localFileURL)
+                } catch {
+                    print(error)
+                }
+                
+                print("\(#file), \(#function), \(#line) \(self.defaultInfo)")
+                
+                print("User data file: \(self.localFileURL)")
+            }
+        }
+        
+        DispatchQueue.main.async {
+            if let Last_name = self.last.text {
+                print("New last name: \(Last_name)")
+                
+                self.defaultInfo.Last_name = Last_name
+                
+                // save the userData to the userDataURL
+                let encoder = PropertyListEncoder()
+                encoder.outputFormat = .xml
+                do {
+                    try encoder.encode(self.defaultInfo).write(to: self.localFileURL)
+                } catch {
+                    print(error)
+                }
+                
+                print("\(#file), \(#function), \(#line) \(self.defaultInfo)")
+                
+                print("User data file: \(self.localFileURL)")
+            }
+        }
+        
+        DispatchQueue.main.async {
+            if let favfood = self.emailText.text {
+                print("New favorite food: \(favfood)")
+                
+                self.defaultInfo.favfood = favfood
+                
+                // save the userData to the userDataURL
+                let encoder = PropertyListEncoder()
+                encoder.outputFormat = .xml
+                do {
+                    try encoder.encode(self.defaultInfo).write(to: self.localFileURL)
+                } catch {
+                    print(error)
+                }
+                
+                print("\(#file), \(#function), \(#line) \(self.defaultInfo)")
+                
+                print("User data file: \(self.localFileURL)")
+            }
+        }
+        
+        
+        DispatchQueue.main.async {
+            if let favrestaurant = self.restaurant.text {
+                print("New favorite restaurant: \(favrestaurant)")
+                
+                self.defaultInfo.favrestaurant = favrestaurant
                 
                 // save the userData to the userDataURL
                 let encoder = PropertyListEncoder()
