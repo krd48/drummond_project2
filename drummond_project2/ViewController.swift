@@ -16,6 +16,17 @@ struct DefaultInfo : Codable{
 
 class ViewController: UIViewController, UITextFieldDelegate {
     
+    @IBOutlet weak var output: UILabel!
+    
+    @IBAction func `switch`(_ sender: UISwitch) {
+        if (sender.isOn == true)
+        {
+            output.text = "I am hungry"
+        }
+        else{
+            output.text = "No I am not hungry"
+        }
+    }
     
     // mood of the (single) user
     var defaultInfo = DefaultInfo()
@@ -183,6 +194,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
         return true
     }
 }
+
+
     
 //
 //    // Make the keyboard disappear once return is pressed
