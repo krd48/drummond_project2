@@ -93,6 +93,7 @@
                         <outlet property="first" destination="k8s-c2-SGY" id="Ua5-qA-xVT"/>
                         <outlet property="last" destination="Ogp-nI-Qp4" id="jov-Qh-u4q"/>
                         <outlet property="restaurant" destination="0Ml-nZ-IwG" id="H9T-DI-LUX"/>
+                        <outlet property="toggle" destination="sBe-TP-4fJ" id="F5N-ey-ldc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

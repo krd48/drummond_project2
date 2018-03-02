@@ -12,6 +12,7 @@ struct DefaultInfo : Codable{
     var Last_name: String?
     var favfood: String?
     var favrestaurant: String?
+    var button: Bool?
 }
 
 class ViewController: UIViewController, UITextFieldDelegate {
@@ -22,6 +23,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     var lastname = DefaultInfo()
     var favfood = DefaultInfo()
     var favrestaurant = DefaultInfo()
+    var defaultswitch = DefaultInfo()
     
     
     // email address entry
@@ -31,12 +33,9 @@ class ViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var last: UITextField!
     @IBOutlet weak var emailText: UITextField!
     @IBOutlet weak var restaurant: UITextField!
-   // @IBOutlet weak var `switch`: UISwitch!
+    @IBOutlet weak var toggle: UISwitch!
     
-    //@IBOutlet weak var f_name: UITextField!
-    
- 
-// URL for file UserData.plist in user document directory for this app
+    // URL for file UserData.plist in user document directory for this app
     lazy var localFileURL = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0].appendingPathComponent("proj2").appendingPathExtension("plist")
     
    override func viewDidLoad() {
@@ -53,6 +52,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     self.last.text = self.defaultInfo.Last_name
     self.emailText.text = self.defaultInfo.Last_name
     self.restaurant.text = self.defaultInfo.Last_name
+    self.toggle.isOn = self.defaultInfo.button!
     
     }
 
@@ -167,10 +167,11 @@ class ViewController: UIViewController, UITextFieldDelegate {
         
         DispatchQueue.main.async {
             if let favrestaurant = self.restaurant.text {
+                let curswitch = self.toggle.isOn
                 print("New favorite restaurant: \(favrestaurant)")
                 
                 self.defaultInfo.favrestaurant = favrestaurant
-                
+                self.defaultInfo.button = curswitch
                 // save the userData to the userDataURL
                 let encoder = PropertyListEncoder()
                 encoder.outputFormat = .xml
@@ -186,6 +187,31 @@ class ViewController: UIViewController, UITextFieldDelegate {
             }
         }
         
+//
+//        DispatchQueue.main.async {
+//            if let defaultswitch = self.toggle.text {
+//
+//                let curswitch = self.toggle.isOn
+//                print("New favorite restaurant: \(defaultswitch)")
+//
+//                self.defaultInfo.defaultswitch = defaultswitch
+//
+//                // save the userData to the userDataURL
+//                let encoder = PropertyListEncoder()
+//                encoder.outputFormat = .xml
+//                do {
+//                    try encoder.encode(self.defaultInfo).write(to: self.localFileURL)
+//                } catch {
+//                    print(error)
+//                }
+//
+//                print("\(#file), \(#function), \(#line) \(self.defaultInfo)")
+//
+//                print("User data file: \(self.localFileURL)")
+//            }
+//        }
+        
+
         return true
     }
 }
