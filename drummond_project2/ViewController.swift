@@ -46,8 +46,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
     // set the default field
     self.first.text = self.defaultInfo.First_name
     self.last.text = self.defaultInfo.Last_name
-    self.emailText.text = self.defaultInfo.Last_name
-    self.restaurant.text = self.defaultInfo.Last_name
+    self.emailText.text = self.defaultInfo.favfood
+    self.restaurant.text = self.defaultInfo.favrestaurant
     self.toggle.isOn = self.defaultInfo.button!
     
     }
