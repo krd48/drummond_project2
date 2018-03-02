@@ -15,7 +15,7 @@ struct DefaultInfo : Codable{
 class ViewController: UIViewController, UITextFieldDelegate {
     
 
-    //  of the (single) user
+    //  info of the (single) user
     var defaultInfo = DefaultInfo()
     var lastname = DefaultInfo()
     var favfood = DefaultInfo()
@@ -31,7 +31,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var restaurant: UITextField!
     @IBOutlet weak var toggle: UISwitch!
     
-    // URL for file UserData.plist in user document directory for this app
+    // URL for file proj2.plist in user document directory for this app
     lazy var localFileURL = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0].appendingPathComponent("proj2").appendingPathExtension("plist")
     
    override func viewDidLoad() {
@@ -52,7 +52,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     }
 
-    
+    // grab path of plist file
     guard let defaultInfoURL = Bundle.main.url(forResource: "proj2", withExtension:"plist") else {
         print("Error: is it still here Unable to form path")
   
