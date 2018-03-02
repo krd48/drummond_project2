@@ -62,13 +62,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZWJ-IS-PJY">
-                                <rect key="frame" x="164.5" y="377.5" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <action selector="updateDefaults" destination="BYZ-38-t0r" eventType="touchUpInside" id="oYa-wf-9Hf"/>
-                                </connections>
-                            </button>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="sBe-TP-4fJ">
                                 <rect key="frame" x="161" y="318" width="51" height="31"/>
                             </switch>
@@ -77,13 +70,11 @@
                         <constraints>
                             <constraint firstItem="vca-ht-kSM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="AnR-Sl-MRw"/>
                             <constraint firstItem="PVv-hs-hdA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="E1v-F9-X4u"/>
-                            <constraint firstItem="ZWJ-IS-PJY" firstAttribute="top" secondItem="sBe-TP-4fJ" secondAttribute="bottom" constant="31.329999999999998" id="Eq5-K2-LhJ"/>
                             <constraint firstItem="SKu-eR-LT8" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="18" id="IWD-AX-PlM"/>
                             <constraint firstItem="vca-ht-kSM" firstAttribute="top" secondItem="PVv-hs-hdA" secondAttribute="bottom" constant="18" id="MQ6-lu-0iw"/>
                             <constraint firstItem="PVv-hs-hdA" firstAttribute="top" secondItem="SKu-eR-LT8" secondAttribute="bottom" constant="22.5" id="QbO-ah-gsZ"/>
                             <constraint firstItem="sBe-TP-4fJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="RRf-MH-yub"/>
                             <constraint firstItem="sBe-TP-4fJ" firstAttribute="top" secondItem="vca-ht-kSM" secondAttribute="bottom" constant="15.5" id="Tad-JT-crr"/>
-                            <constraint firstItem="ZWJ-IS-PJY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cqj-vY-wH5"/>
                             <constraint firstItem="SKu-eR-LT8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pWl-cT-M3a"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>

@@ -57,7 +57,6 @@ class ViewController: UIViewController, UITextFieldDelegate {
     }
 
     
-    
     guard let defaultInfoURL = Bundle.main.url(forResource: "proj2", withExtension:"plist") else {
         print("Error: is it still here Unable to form path")
   
