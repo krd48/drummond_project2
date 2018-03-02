@@ -3,13 +3,13 @@
 <plist version="1.0">
 <dict>
 	<key>First_name</key>
-	<string>lebron</string>
+	<string>chris</string>
 	<key>Last_name</key>
 	<string>james</string>
 	<key>favfood</key>
-	<string>is</string>
+	<string>pizza</string>
 	<key>favrestaurant</key>
-	<string>king</string>
+	<string>moes</string>
 	<key>button</key>
 	<true/>
 </dict>
