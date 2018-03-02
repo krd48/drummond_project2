@@ -186,48 +186,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
                 print("User data file: \(self.localFileURL)")
             }
         }
-        
-//
-//        DispatchQueue.main.async {
-//            if let defaultswitch = self.toggle.text {
-//
-//                let curswitch = self.toggle.isOn
-//                print("New favorite restaurant: \(defaultswitch)")
-//
-//                self.defaultInfo.defaultswitch = defaultswitch
-//
-//                // save the userData to the userDataURL
-//                let encoder = PropertyListEncoder()
-//                encoder.outputFormat = .xml
-//                do {
-//                    try encoder.encode(self.defaultInfo).write(to: self.localFileURL)
-//                } catch {
-//                    print(error)
-//                }
-//
-//                print("\(#file), \(#function), \(#line) \(self.defaultInfo)")
-//
-//                print("User data file: \(self.localFileURL)")
-//            }
-//        }
-        
 
         return true
     }
 }
-
-
-    
-//
-//    // Make the keyboard disappear once return is pressed
-//    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-//
-//
-//
-//        // Note: implements default return key behavior
-//        return true
-//        }
-//
-//    }
-
-
