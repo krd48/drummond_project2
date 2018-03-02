@@ -1,10 +1,7 @@
 // Kyle Drummond
+// krd48@zips.uakron.edu
 // IOS Project 2 SP 2018
-// Moving keyboard for item
-//
-// Note: Comments with this label are to explain semantics of iOS
-//       Do not use comments like these in your projects
-// Used the class github account as a reference
+
 import UIKit
 
 struct DefaultInfo : Codable{
@@ -18,7 +15,7 @@ struct DefaultInfo : Codable{
 class ViewController: UIViewController, UITextFieldDelegate {
     
 
-    // mood of the (single) user
+    //  of the (single) user
     var defaultInfo = DefaultInfo()
     var lastname = DefaultInfo()
     var favfood = DefaultInfo()
@@ -26,8 +23,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     var defaultswitch = DefaultInfo()
     
     
-    // email address entry
-    // Note: Must create text field in storyboard, and connect to this IBOutlet
+ 
     
     @IBOutlet weak var first: UITextField!
     @IBOutlet weak var last: UITextField!
