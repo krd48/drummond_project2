@@ -49,12 +49,11 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     defer {
     // set the default field
-    self.first.text = self.defaultInfo.Last_name
-    self.last.text = self.lastname.Last_name
-    self.emailText.text = self.favfood.Last_name
-    self.restaurant.text = self.favrestaurant.Last_name
     self.first.text = self.defaultInfo.First_name
-   // print(self.defaultInfo.Last_name)
+    self.last.text = self.defaultInfo.Last_name
+    self.emailText.text = self.defaultInfo.Last_name
+    self.restaurant.text = self.defaultInfo.Last_name
+    
     }
 
     

@@ -11,6 +11,6 @@
 	<key>favrestaurant</key>
 	<string>This worked!</string>
 	<key>button</key>
-	<string>did it work</string>
+	<false/>
 </dict>
 </plist>

@@ -14,6 +14,7 @@
 		FA408EF5203DFE5A00968909 /* drummond_project2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA408EF4203DFE5A00968909 /* drummond_project2Tests.swift */; };
 		FA408F00203DFE5A00968909 /* drummond_project2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA408EFF203DFE5A00968909 /* drummond_project2UITests.swift */; };
 		FA7BD2A7203E4DAE007E2559 /* proj2.plist in Resources */ = {isa = PBXBuildFile; fileRef = FA7BD2A6203E4DAE007E2559 /* proj2.plist */; };
+		FAD70FD02048CD3F0019B02F /* proj2.plist in Resources */ = {isa = PBXBuildFile; fileRef = FA7BD2A6203E4DAE007E2559 /* proj2.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -232,6 +233,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAD70FD02048CD3F0019B02F /* proj2.plist in Resources */,
 				FA408EE7203DFE5A00968909 /* Assets.xcassets in Resources */,
 				FA408EE5203DFE5A00968909 /* Main.storyboard in Resources */,
 			);
